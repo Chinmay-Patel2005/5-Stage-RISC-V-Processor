@@ -11,8 +11,8 @@ This project implements a simple RISC-V single-cycle processor in Verilog. It in
   - **RISC_V_Single_Cycle.srcs/sim_1/new/**: Testbench files (e.g., `tb.v`).
   - **RISC_V_Single_Cycle.srcs/sources_1/imports/memfiles/**: Memory initialization files:
     - `output.mem`, `determinant.mem`, `data_mem_init.mem`
-- **C++ Code**: (Not included here) Used to generate the assembly for solving a linear equation.
-- **Assembly Code**: (Not included here) Used to initialize instruction memory.
+- **C++ Code**: Used to generate the assembly for solving a linear equation.
+- **Assembly Code**: Used to initialize instruction memory.
 
 ## How to Use
 
