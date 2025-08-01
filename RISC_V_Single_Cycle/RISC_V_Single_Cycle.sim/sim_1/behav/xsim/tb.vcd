@@ -1,0 +1,186 @@
+$date
+   Fri Apr 18 04:12:52 2025
+$end
+
+$version
+  2024.1
+  $dumpfile ("tb.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 32 % PC_top [31:0] $end
+$var wire 32 & instruction_top [31:0] $end
+$var wire 32 ' Rd1_top [31:0] $end
+$var wire 32 ( Rd2_top [31:0] $end
+$var wire 32 ) ImmExt_top [31:0] $end
+$var wire 32 * mux2_top [31:0] $end
+$var wire 32 + Sum_out_top [31:0] $end
+$var wire 32 , NexttoPC_top [31:0] $end
+$var wire 32 - PCin_top [31:0] $end
+$var wire 32 . address_top [31:0] $end
+$var wire 32 / Memdata_top [31:0] $end
+$var wire 32 0 WriteBack_top [31:0] $end
+$var wire 1 1 RegWrite_top $end
+$var wire 1 2 ALUSrc_top $end
+$var wire 1 3 zero_top $end
+$var wire 1 4 branch_top $end
+$var wire 1 5 sel1_top $end
+$var wire 1 6 MemtoReg_top $end
+$var wire 1 7 MemWrite_top $end
+$var wire 1 8 MemRead_top $end
+$var wire 2 9 ALUOp_top [1:0] $end
+$var wire 4 : control_top [3:0] $end
+$scope module PC $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 32 - PC_in [31:0] $end
+$var reg 32 ; PC_out [31:0] $end
+$upscope $end
+$scope module PC_Adder $end
+$var wire 32 % fromPC [31:0] $end
+$var wire 32 , NexttoPC [31:0] $end
+$upscope $end
+$scope module Inst_Memory $end
+$var wire 32 % read_address [31:0] $end
+$var wire 32 & instruction_out [31:0] $end
+$upscope $end
+$scope module Reg_File $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 1 1 RegWrite $end
+$var wire 5 < Rs1 [19:15] $end
+$var wire 5 = Rs2 [24:20] $end
+$var wire 5 > Rd [11:7] $end
+$var wire 32 0 Write_data [31:0] $end
+$var wire 32 ' read_data1 [31:0] $end
+$var wire 32 ( read_data2 [31:0] $end
+$var integer 32 ? i [31:0] $end
+$upscope $end
+$scope module ImmGen $end
+$var wire 7 @ Opcode [6:0] $end
+$var wire 32 & instruction [31:0] $end
+$var reg 32 A ImmExt [31:0] $end
+$upscope $end
+$scope module Control_Unit $end
+$var wire 7 @ instruction [6:0] $end
+$var reg 1 B Branch $end
+$var reg 1 C MemRead $end
+$var reg 1 D MemtoReg $end
+$var reg 1 E MemWrite $end
+$var reg 1 F ALUSrc $end
+$var reg 1 G RegWrite $end
+$var reg 2 H ALUOp [1:0] $end
+$upscope $end
+$scope module ALU_Control $end
+$var wire 7 I fun7 [31:25] $end
+$var wire 3 J fun3 [14:12] $end
+$var wire 2 9 ALUOp [1:0] $end
+$var reg 4 K Control_out [3:0] $end
+$upscope $end
+$scope module ALU $end
+$var wire 32 ' A [31:0] $end
+$var wire 32 * B [31:0] $end
+$var wire 4 : Control_in [3:0] $end
+$var reg 1 L zero $end
+$var reg 32 M ALU_Result [31:0] $end
+$upscope $end
+$scope module ALU_mux $end
+$var wire 1 2 sel2 $end
+$var wire 32 ( A2 [31:0] $end
+$var wire 32 ) B2 [31:0] $end
+$var wire 32 * Mux2_out [31:0] $end
+$upscope $end
+$scope module Adder $end
+$var wire 32 % in_1 [31:0] $end
+$var wire 32 ) in_2 [31:0] $end
+$var wire 32 + Sum_out [31:0] $end
+$upscope $end
+$scope module AND $end
+$var wire 1 4 branch $end
+$var wire 1 3 zero $end
+$var wire 1 5 and_out $end
+$upscope $end
+$scope module PC_Mux $end
+$var wire 1 5 sel1 $end
+$var wire 32 , A1 [31:0] $end
+$var wire 32 + B1 [31:0] $end
+$var wire 32 - Mux1_out [31:0] $end
+$upscope $end
+$scope module Data_mem $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 1 7 MemWrite $end
+$var wire 1 8 MemRead $end
+$var wire 32 . read_address [31:0] $end
+$var wire 32 ( Write_data [31:0] $end
+$var wire 32 / MemData_out [31:0] $end
+$var integer 32 N k [31:0] $end
+$upscope $end
+$scope module Result_Mux $end
+$var wire 1 6 sel3 $end
+$var wire 32 . A3 [31:0] $end
+$var wire 32 / B3 [31:0] $end
+$var wire 32 0 Mux3_out [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#1000000
+$dumpvars
+0!
+0"
+0#
+0$
+bx %
+bx &
+bx '
+bx (
+bx )
+bx *
+bx +
+bx ,
+bx -
+bx .
+bx /
+bx 0
+x1
+x2
+x3
+x4
+x5
+x6
+x7
+x8
+bx 9
+bx :
+bx ;
+bx <
+bx =
+bx >
+bx ?
+bx @
+bx A
+xB
+xC
+xD
+xE
+xF
+xG
+bx H
+bx I
+bx J
+bx K
+xL
+bx M
+bx N
+$end

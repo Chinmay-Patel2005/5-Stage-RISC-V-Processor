@@ -1,0 +1,30 @@
+Time resolution is 1 ps
+Time = 0 | MemWrite = 0 | Address = 00000000 | Data = 00000000
+Time = 15000 | MemWrite = 0 | Address = 00000004 | Data = 00000000
+Time = 25000 | MemWrite = 0 | Address = 00000008 | Data = 00000000
+Time = 35000 | MemWrite = 0 | Address = 0000000c | Data = 00000000
+Time = 45000 | MemWrite = 0 | Address = 00000010 | Data = 00000000
+Time = 55000 | MemWrite = 0 | Address = 00000014 | Data = 00000000
+Time = 65000 | MemWrite = 0 | Address = 00000018 | Data = 00000000
+Time = 75000 | MemWrite = 0 | Address = 0000001c | Data = 00000000
+Time = 85000 | MemWrite = 0 | Address = 00000020 | Data = 00000000
+Time = 95000 | MemWrite = 0 | Address = 00000014 | Data = fffffffc
+Time = 105000 | MemWrite = 0 | Address = 00000002 | Data = 00000001
+Time = 115000 | MemWrite = 0 | Address = 00000012 | Data = 00000002
+Time = 125000 | MemWrite = 0 | Address = ffffffdc | Data = 00000012
+Time = 135000 | MemWrite = 0 | Address = fffffff0 | Data = fffffffc
+Time = 145000 | MemWrite = 0 | Address = fffffffa | Data = fffffffd
+Time = 155000 | MemWrite = 0 | Address = fffffff6 | Data = fffffffa
+Time = 165000 | MemWrite = 0 | Address = ffffffe2 | Data = fffffff6
+Time = 175000 | MemWrite = 0 | Address = 00000004 | Data = 00000001
+Time = 185000 | MemWrite = 0 | Address = 0000000f | Data = fffffffd
+Time = 195000 | MemWrite = 0 | Address = fffffff5 | Data = 0000000f
+Time = 205000 | MemWrite = 0 | Address = 0000000b | Data = fffffff5
+Time = 215000 | MemWrite = 0 | Address = fffffffa | Data = ffffffe2
+Time = 225000 | MemWrite = 0 | Address = 00000005 | Data = 0000000b
+Time = 235000 | MemWrite = 1 | Address = 00000024 | Data = 00000005
+Time = 245000 | MemWrite = 0 | Address = xxxxxxxx | Data = xxxxxxxx
+
+=== Final Result ===
+Determinant Value = 5
+$stop called at time : 255 ns : File "C:/Users/Siddhant/Desktop/verilog/Single_Cycle_riscv_processor/Single_Cycle_riscv_processor.srcs/sim_1/new/tb.v" Line 58
